@@ -50,7 +50,7 @@ SELECT b.name
 FROM buildings b
 CROSS JOIN roads r
 WHERE r.name = 'RoadX'
-  AND ST_Y(ST_Centroid(b.geometry)) > ST_Y(ST_PointN(r.geometry, 1));
+  AND ST_Y(ST_Centroid(b.geometry)) > ST_Y(ST_StartPoint(r.geometry));
 
 -- h)
 SELECT
