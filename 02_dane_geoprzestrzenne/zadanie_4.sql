@@ -16,5 +16,5 @@ CREATE TABLE poi
 (
     id       SERIAL PRIMARY KEY,
     geometry GEOMETRY(POINT),
-    name     TEXT
+    name     VARCHAR(255)
 );
